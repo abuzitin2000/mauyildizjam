@@ -6,7 +6,11 @@ using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
     public Image timerBar;
+    public ChibiManager chibi;
+    public Animator girl;
 
+    public int day;
+    public int progress;
     public float timerInitial;
     
     public float timer;
@@ -17,6 +21,8 @@ public class LevelManager : MonoBehaviour
     {
         timerBarInitialWidth = timerBar.rectTransform.sizeDelta.x;
         timer = timerInitial;
+
+        chibi.ShowChibi(day, progress);
     }
 
     // Update is called once per frame
