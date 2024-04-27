@@ -484,7 +484,6 @@ GameObject:
   m_Component:
   - component: {fileID: 913652729}
   - component: {fileID: 913652728}
-  - component: {fileID: 913652727}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Untagged
@@ -492,27 +491,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &913652727
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913652726}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0482ac380350c6d418f2f7a269ab1f4d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &913652728
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -554,8 +532,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9811321, g: 0.032395888, b: 0.72710997, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 972746dc54d56fe4fb8934ebb458f523, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -574,8 +552,8 @@ Transform:
   m_GameObject: {fileID: 913652726}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.01, y: -0.01, z: 0}
-  m_LocalScale: {x: 1.1723, y: 3.8066, z: 1}
+  m_LocalPosition: {x: 0.45, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.6312989, y: 0.6312989, z: 0.6312989}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -706,10 +684,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerBar: {fileID: 1280777645}
   chibi: {fileID: 968103950}
+  girl: {fileID: 913652728}
+  girlSprites:
+  - {fileID: 21300000, guid: 972746dc54d56fe4fb8934ebb458f523, type: 3}
+  - {fileID: 21300000, guid: 5d80d94b39b51b14e98bec4cb00c7352, type: 3}
+  - {fileID: 21300000, guid: 5049a8768cfe6bd498df269ba8406288, type: 3}
+  - {fileID: 21300000, guid: e84f51418f4ec8a4d97438c66221fae1, type: 3}
+  - {fileID: 21300000, guid: 98cccd26f325c494daf47597e252899f, type: 3}
   day: 0
   progress: 0
   timerInitial: 30
-  timer: 1000
+  timer: 0
 --- !u!4 &1052128800
 Transform:
   m_ObjectHideFlags: 0
