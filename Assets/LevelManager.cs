@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
         timerBarInitialWidth = timerBar.rectTransform.sizeDelta.x;
         timer = timerInitial;
 
-        chibi.ShowChibi(day, progress);
+        chibi.ShowChibi(day, 0);
 
         girl.sprite = girlSprites[0];
     }
@@ -39,15 +39,16 @@ public class LevelManager : MonoBehaviour
         {
             timer -= Time.deltaTime;
 
-            if (0.25f > timer / timerInitial)
+            if (0.2f > timer / timerInitial)
             {
                 girl.sprite = girlSprites[3];
+                chibi.ShowChibi(day, 1);
             }
-            else if (0.5f > timer / timerInitial)
+            else if (0.4f > timer / timerInitial)
             {
                 girl.sprite = girlSprites[2];
             }
-            else if (0.75f > timer / timerInitial)
+            else if (0.8f > timer / timerInitial)
             {
                 girl.sprite = girlSprites[1];
             }
@@ -55,6 +56,7 @@ public class LevelManager : MonoBehaviour
         else
         {
             LoseLevel();
+            chibi.ShowChibi(day, 2);
         }
 
         timerBar.rectTransform.sizeDelta = new Vector2(timerBarInitialWidth * (timer / timerInitial), timerBar.rectTransform.sizeDelta.y);
