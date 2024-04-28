@@ -119,4 +119,9 @@ public class LevelManager : MonoBehaviour
             resetTimer = 3f;
         }
     }
+
+    public void OpenFirstLock()
+    {
+
+    }
 }
