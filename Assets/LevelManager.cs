@@ -53,7 +53,10 @@ public class LevelManager : MonoBehaviour
 
             if (donetimer > 4f)
             {
-                SceneManager.LoadScene("day2");
+                if (day == 0)
+                    SceneManager.LoadScene("day2");
+                else
+                    SceneManager.LoadScene("bitis");
             }
 
             return;
@@ -94,7 +97,6 @@ public class LevelManager : MonoBehaviour
                 else if (0.4f > timer / timerInitial)
                 {
                     girl.sprite = girlSprites[6];
-                    chibi.ShowChibi(day, 1);
                 }
                 else
                 {
@@ -151,6 +153,14 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public void OpenSecondLock()
+    {
+        if(GameObject.FindGameObjectWithTag("Anahtar2"))
+        {
+            GameObject.FindGameObjectWithTag("Gilit2").SetActive(false);
+        }
+    }
+
     public void Kes()
     {
         if (GameObject.FindGameObjectWithTag("Knife"))
@@ -170,6 +180,22 @@ public class LevelManager : MonoBehaviour
         else
         {
             chibi.ShowChibi(0, 5);
+        }
+    }
+
+    public void Al()
+    {
+        Debug.Log("aaaaa");
+        if (GameObject.FindGameObjectWithTag("Gun"))
+        {
+            girl.sprite = girlSprites[7];
+            chibi.ShowChibi(1, 5);
+
+            daydone = true;
+        }
+        else
+        {
+            chibi.ShowChibi(1, 4);
         }
     }
 }

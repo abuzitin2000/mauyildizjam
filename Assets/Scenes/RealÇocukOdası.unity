@@ -9448,11 +9448,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 98cccd26f325c494daf47597e252899f, type: 3}
   - {fileID: 21300000, guid: 66057071864d2e249a820526527dd8af, type: 3}
   - {fileID: 21300000, guid: 5b2dd42286820584f9728e7fb6e48913, type: 3}
-  - {fileID: 21300000, guid: 73d2f29e8afbfb046b777753f4df74cb, type: 3}
+  - {fileID: 21300000, guid: 820e0d9536091b944bd3027fc71dafac, type: 3}
   chair: {fileID: 1929822933}
   day: 0
   progress: 0
-  timerInitial: 10
+  timerInitial: 120
   timer: 0
   daydone: 0
   END: {fileID: 1566939369}

@@ -247,7 +247,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 93660761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea5c3ee90f24c4c80af9a928ad61f242, type: 3}
+  m_Script: {fileID: 11500000, guid: 07eebd0d18d1b5e48b90057dbd75149d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &142667728
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 93660763}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: "MainMenuBaslang\u0131c, Assembly-CSharp"
         m_MethodName: Exit
         m_Mode: 1
@@ -615,8 +615,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 93660763}
-        m_TargetAssemblyTypeName: "MainMenuBaslang\u0131c, Assembly-CSharp"
-        m_MethodName: Baslat
+        m_TargetAssemblyTypeName: gec, Assembly-CSharp
+        m_MethodName: Gec
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

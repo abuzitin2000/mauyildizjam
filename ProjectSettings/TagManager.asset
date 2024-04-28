@@ -10,6 +10,8 @@ TagManager:
   - Gilit1
   - Gilit2
   - Knife
+  - cook
+  - Gun
   layers:
   - Default
   - TransparentFX
