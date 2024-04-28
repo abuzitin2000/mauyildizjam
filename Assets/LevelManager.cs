@@ -28,6 +28,8 @@ public class LevelManager : MonoBehaviour
 
     private float donetimer;
 
+    public GameObject END;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,9 +42,12 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (END.activeSelf && Input.anyKey)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
         if (daydone)
-            return;
-        else
         {
             donetimer += Time.deltaTime;
 
@@ -50,6 +55,8 @@ public class LevelManager : MonoBehaviour
             {
                 SceneManager.LoadScene("day2");
             }
+
+            return;
         }
 
         if (timer > 0f)
@@ -122,7 +129,7 @@ public class LevelManager : MonoBehaviour
         {
             if (resetTimer < 0f)
             {
-                SceneManager.LoadScene("BaslangıcScene");
+                END.SetActive(true);
             }
             else
             {
