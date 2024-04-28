@@ -1015,7 +1015,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Oyun bir pointden click oyunudur. B\xF6l\xFCmlerde bulmacalar\u0131 \xE7\xF6zerek
+  m_text: "Oyun bir point & click oyunudur. B\xF6l\xFCmlerde bulmacalar\u0131 \xE7\xF6zerek
     rikay\u0131 \xF6l\xFCmden kurtarmaya \xE7al\u0131\u015F\u0131yoruz.Etraftaki
     t\u0131klanabilir \xF6\u011Felerle bulmacalar\u0131 \xE7\xF6zmeye \xE7al\u0131\u015F\u0131n."
   m_isRightToLeft: 0
@@ -1773,7 +1773,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1147237437
 RectTransform:
   m_ObjectHideFlags: 0
