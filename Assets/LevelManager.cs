@@ -26,6 +26,8 @@ public class LevelManager : MonoBehaviour
 
     public bool daydone;
 
+    private float donetimer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,15 @@ public class LevelManager : MonoBehaviour
     {
         if (daydone)
             return;
+        else
+        {
+            donetimer += Time.deltaTime;
+
+            if (donetimer > 4f)
+            {
+                SceneManager.LoadScene("day2");
+            }
+        }
 
         if (timer > 0f)
         {
@@ -111,7 +122,7 @@ public class LevelManager : MonoBehaviour
         {
             if (resetTimer < 0f)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene("BaslangıcScene");
             }
             else
             {
@@ -139,8 +150,8 @@ public class LevelManager : MonoBehaviour
         {
             if (progress > 0)
             {
-                girl.sprite = girlSprites[3];
-                chibi.ShowChibi(day, 8);
+                girl.sprite = girlSprites[7];
+                chibi.ShowChibi(day, 7);
 
                 daydone = true;
             }

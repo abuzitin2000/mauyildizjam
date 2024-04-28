@@ -478,7 +478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &115051800
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9283,7 +9283,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5b2dd42286820584f9728e7fb6e48913, type: 3}
   - {fileID: 21300000, guid: 73d2f29e8afbfb046b777753f4df74cb, type: 3}
   chair: {fileID: 1929822933}
-  day: 0
+  day: 1
   progress: 0
   timerInitial: 120
   timer: 0
