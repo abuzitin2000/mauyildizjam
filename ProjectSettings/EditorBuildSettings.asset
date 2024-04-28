@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/day2.unity
     guid: 3b163815aa54a2e49a0cf6c2be6189ed
+  - enabled: 1
+    path: Assets/Scenes/bitis.unity
+    guid: 7e64cc672964b9e40900bca247c9073d
   m_configObjects: {}
