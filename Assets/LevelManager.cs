@@ -24,6 +24,8 @@ public class LevelManager : MonoBehaviour
     private float resetTimer;
     private bool dead;
 
+    public bool daydone;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,9 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (daydone)
+            return;
+
         if (timer > 0f)
         {
             timer -= Time.deltaTime;
@@ -122,6 +127,31 @@ public class LevelManager : MonoBehaviour
 
     public void OpenFirstLock()
     {
+        if(GameObject.FindGameObjectWithTag("Anahtar1"))
+        {
+            GameObject.FindGameObjectWithTag("Gilit1").SetActive(false);
+        }
+    }
 
+    public void Kes()
+    {
+        if (GameObject.FindGameObjectWithTag("Knife"))
+        {
+            if (progress > 0)
+            {
+                girl.sprite = girlSprites[3];
+                chibi.ShowChibi(day, 8);
+
+                daydone = true;
+            }
+            else
+            {
+                chibi.ShowChibi(0, 6);
+            }
+        }
+        else
+        {
+            chibi.ShowChibi(0, 5);
+        }
     }
 }
